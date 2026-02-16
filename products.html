@@ -54,64 +54,24 @@
         <section class="bg-base-200 py-16">
             <div class="max-w-7xl mx-auto px-6">
 
-                <!-- Title -->
                 <div class="text-center mb-8">
                     <h2 class="text-3xl lg:text-4xl font-bold mb-6">
                         Our Products
                     </h2>
 
-                    <!-- Category Filter -->
-                    <div class="flex flex-wrap justify-center gap-3">
-                        <button class="btn btn-sm rounded-full bg-indigo-600 text-white border-none">All</button>
-                        <button class="btn btn-sm rounded-full">Electronics</button>
-                        <button class="btn btn-sm rounded-full">Jewelry</button>
-                        <button class="btn btn-sm rounded-full">Men's Clothing</button>
-                        <button class="btn btn-sm rounded-full">Women's Clothing</button>
+                    <!-- Category Show here -->
+                    <div id="categorie-div" class="flex flex-wrap justify-center gap-3">
+
+
                     </div>
                 </div>
 
-                <!-- Product Grid -->
-                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <!-- Product shows here -->
+                <div id="product-container" class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
 
-                    <!-- Products -->
-                    <div class="card bg-base-100 shadow hover:shadow-lg transition duration-300">
-                        <figure class="p-6 bg-gray-100">
-                            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png"
-                                class="h-56 object-contain" />
-                        </figure>
-
-                        <div class="card-body">
-
-                            <div class="flex justify-between items-center text-sm">
-                                <span class="badge badge-outline text-indigo-600">
-                                    Men's Clothing
-                                </span>
-
-                                <div class="flex items-center gap-1">
-                                    <i class="fa-solid fa-star text-yellow-500"></i>
-                                    <span class="font-medium">3.9</span>
-                                    <span class="text-gray-400 text-xs">(120)</span>
-                                </div>
-                            </div>
-
-                            <h3 class="font-semibold text-base line-clamp-2">
-                                Fjallraven - Foldsack No. 1 Backpack
-                            </h3>
-                            <p class="text-lg font-bold">$109.95</p>
-
-                            <div class="card-actions mt-3">
-                                <button class="btn btn-outline btn-sm flex-1">
-                                    <i class="fa-regular fa-eye"></i> Details
-                                </button>
-                                <button class="btn btn-primary btn-sm flex-1">
-                                    <i class="fa-solid fa-cart-plus"></i> Add
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
 
                 </div>
+
 
             </div>
         </section>
@@ -209,6 +169,8 @@
         </div>
 
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
