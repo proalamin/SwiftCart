@@ -13,6 +13,7 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <!-- Navbar -->
     <div class="navbar bg-base-100 shadow-sm px-4">
@@ -48,10 +49,166 @@
 
     </div>
 
-    <div>
-        <h1>okk</h1>
-    </div>
+    <main>
+        <!-- Products Page -->
+        <section class="bg-base-200 py-16">
+            <div class="max-w-7xl mx-auto px-6">
 
+                <!-- Title -->
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+                        Our Products
+                    </h2>
 
+                    <!-- Category Filter -->
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <button class="btn btn-sm rounded-full bg-indigo-600 text-white border-none">All</button>
+                        <button class="btn btn-sm rounded-full">Electronics</button>
+                        <button class="btn btn-sm rounded-full">Jewelry</button>
+                        <button class="btn btn-sm rounded-full">Men's Clothing</button>
+                        <button class="btn btn-sm rounded-full">Women's Clothing</button>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+
+                    <!-- Products -->
+                    <div class="card bg-base-100 shadow hover:shadow-lg transition duration-300">
+                        <figure class="p-6 bg-gray-100">
+                            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png"
+                                class="h-56 object-contain" />
+                        </figure>
+
+                        <div class="card-body">
+
+                            <div class="flex justify-between items-center text-sm">
+                                <span class="badge badge-outline text-indigo-600">
+                                    Men's Clothing
+                                </span>
+
+                                <div class="flex items-center gap-1">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <span class="font-medium">3.9</span>
+                                    <span class="text-gray-400 text-xs">(120)</span>
+                                </div>
+                            </div>
+
+                            <h3 class="font-semibold text-base line-clamp-2">
+                                Fjallraven - Foldsack No. 1 Backpack
+                            </h3>
+                            <p class="text-lg font-bold">$109.95</p>
+
+                            <div class="card-actions mt-3">
+                                <button class="btn btn-outline btn-sm flex-1">
+                                    <i class="fa-regular fa-eye"></i> Details
+                                </button>
+                                <button class="btn btn-primary btn-sm flex-1">
+                                    <i class="fa-solid fa-cart-plus"></i> Add
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-[#1e293b] text-gray-300 pt-14 pb-8">
+
+        <div class="max-w-6xl mx-auto px-12 lg:px-6">
+
+            <!-- Top Grid -->
+            <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+
+                <!-- Brand -->
+                <div>
+                    <h3 class="text-2xl font-bold text-indigo-400 mb-4">
+                        SwiftCart
+                    </h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Your one-stop shop for all your fashion and lifestyle needs.
+                        Quality products, fast delivery, and excellent support.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-sm font-semibold tracking-wide text-gray-400 uppercase mb-4">
+                        Quick Links
+                    </h4>
+                    <ul class="space-y-3">
+                        <li><a class="hover:text-white transition">Home</a></li>
+                        <li><a class="hover:text-white transition">Products</a></li>
+                        <li><a class="hover:text-white transition">About</a></li>
+                        <li><a class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="text-sm font-semibold tracking-wide text-gray-400 uppercase mb-4">
+                        Support
+                    </h4>
+                    <ul class="space-y-3">
+                        <li><a class="hover:text-white transition">FAQ</a></li>
+                        <li><a class="hover:text-white transition">Shipping</a></li>
+                        <li><a class="hover:text-white transition">Returns</a></li>
+                        <li><a class="hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">
+                        Subscribe to our Newsletter
+                    </h4>
+
+                    <p class="text-sm text-gray-400 mb-5 leading-relaxed">
+                        The latest news, articles, and resources,
+                        sent to your inbox weekly.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-3">
+
+                        <input type="email" placeholder="Enter your email"
+                            class="bg-gray-200 text-gray-700 px-1 py-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+
+                        <button
+                            class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-lg text-white font-medium transition">
+                            Subscribe
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-600 my-10"></div>
+
+            <!-- Bottom Row -->
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+
+                <p>© 2025 SwiftCart, Inc. All rights reserved.</p>
+
+                <div class="flex gap-5 text-lg">
+                    <i class="fa-brands fa-facebook-f hover:text-white cursor-pointer transition"></i>
+                    <i class="fa-brands fa-twitter hover:text-white cursor-pointer transition"></i>
+                    <i class="fa-brands fa-instagram hover:text-white cursor-pointer transition"></i>
+                    <i class="fa-brands fa-linkedin-in hover:text-white cursor-pointer transition"></i>
+                    <i class="fa-regular fa-envelope hover:text-white cursor-pointer transition"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
 </body>
+
 </html>
