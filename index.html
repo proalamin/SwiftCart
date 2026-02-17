@@ -154,123 +154,11 @@
                     </h2>
                 </div>
 
-                <!-- Products Grid -->
-                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-
-                    <!-- Product Card 1 -->
-                    <div class="card bg-base-200 shadow-md hover:shadow-xl transition duration-300">
-                        <figure class="p-6">
-                            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png"
-                                class="rounded-lg h-64 object-contain" />
-                        </figure>
-
-                        <div class="card-body pt-0">
-
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="badge bg-blue-200 text-blue-800">Men's Clothing</span>
-                                <div class="text-sm flex items-center gap-1">
-                                    <i class="fa-solid fa-star text-yellow-500"></i>
-                                    <span class="font-medium">3.9</span>
-                                    <span class="text-gray-500">(120)</span>
-                                </div>
-
-                            </div>
-
-                            <h3 class="font-semibold text-lg">
-                                Fjallraven - Foldsack No. 1 Backpack
-                            </h3>
-
-                            <p class="text-xl font-bold mt-2">$109.95</p>
-
-                            <div class="card-actions mt-4">
-                                <button class="btn btn-outline btn-sm flex-1">
-                                    <i class="fa-regular fa-eye"></i> Details
-                                </button>
-                                <button class="btn btn-primary btn-sm flex-1">
-                                    <i class="fa-solid fa-cart-plus"></i> Add
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Product Card 2 -->
-                    <div class="card bg-base-200 shadow-md hover:shadow-xl transition duration-300">
-                        <figure class="p-6">
-                            <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png"
-                                class="rounded-lg h-64 object-contain" />
-                        </figure>
-
-                        <div class="card-body pt-0">
-
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="badge bg-blue-200 text-blue-800">Men's Clothing</span>
-                                <div class="text-sm flex items-center gap-1">
-                                    <i class="fa-solid fa-star text-yellow-500"></i>
-                                    <span class="font-medium">3.9</span>
-                                    <span class="text-gray-500">(120)</span>
-                                </div>
-
-                            </div>
-
-                            <h3 class="font-semibold text-lg">
-                                Mens Casual Premium Slim Fit T-Shirts
-                            </h3>
-
-                            <p class="text-xl font-bold mt-2">$22.3</p>
-
-                            <div class="card-actions mt-4">
-                                <button class="btn btn-outline btn-sm flex-1">
-                                    <i class="fa-regular fa-eye"></i> Details
-                                </button>
-                                <button class="btn btn-primary btn-sm flex-1">
-                                    <i class="fa-solid fa-cart-plus"></i> Add
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Product Card 3 -->
-                    <div class="card bg-base-200 shadow-md hover:shadow-xl transition duration-300">
-                        <figure class="p-6">
-                            <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png"
-                                class="rounded-lg h-64 object-contain" />
-                        </figure>
-
-                        <div class="card-body pt-0">
-
-                            <div class="flex justify-between items-center mb-2">
-
-                                <span class="badge bg-blue-200 text-blue-800">Men's Clothing</span>
-
-                                <div class="text-sm flex items-center gap-1">
-                                    <i class="fa-solid fa-star text-yellow-500"></i>
-                                    <span class="font-medium">3.9</span>
-                                    <span class="text-gray-500">(120)</span>
-                                </div>
-
-                            </div>
-
-                            <h3 class="font-semibold text-lg">
-                                Mens Cotton Jacket
-                            </h3>
-
-                            <p class="text-xl font-bold mt-2">$55.99</p>
-
-                            <div class="card-actions mt-4">
-                                <button class="btn btn-outline btn-sm flex-1">
-                                    <i class="fa-regular fa-eye"></i> Details
-                                </button>
-                                <button class="btn btn-primary btn-sm flex-1">
-                                    <i class="fa-solid fa-cart-plus"></i> Add
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
-
+                <!-- Products loads here -->
+                <div id="trending-container" class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                
                 </div>
+
             </div>
         </section>
 
@@ -368,7 +256,20 @@
     </footer>
 
 
+    <dialog id="product_modal" class="modal">
+        <div class="modal-box max-w-3xl">
+            <div id="modal-content">
 
+            </div>
+
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+
+        </div>
+    </dialog>
 
     <script src="./script.js"></script>
 </body>
